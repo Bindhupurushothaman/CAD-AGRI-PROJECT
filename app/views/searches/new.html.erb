@@ -1,0 +1,29 @@
+<div class="container">
+<div class="col-6">
+	<h2>Advanced Search</h2>
+
+<%= form_for @search, html: {class: "pure-form"} do |s| %>
+
+<div class="field">
+	<%= s.label :food %>
+	<%= s.text_field :food %>
+</div>
+
+<div class="field">
+	<%= s.label :category %>
+	<%= s.select :category, options_for_select(@categories), :include_blank => true%>
+</div>
+
+<div class="field">
+	<p><%= s.label :min_price, "Min Price" %> : <%= s.text_field :min_price, size: 12 %></p>
+	<p><%= s.label :max_price, "Max Price" %> : <%= s.text_field :max_price, size: 12 %></p>
+</div>
+
+
+<div class="action"><%= s.submit "Find", class: "btn btn-success" %></div>
+
+<% end %>
+
+<p><%= link_to 'Back', root_path %></p>	
+</div>
+</div>

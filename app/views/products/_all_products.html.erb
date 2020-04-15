@@ -1,0 +1,7 @@
+	<% @products.each do |product| %>
+	<div class="item">
+		<style= "display:block">
+	<%= link_to(product_thumbnail(product), product_path(product)) %></style=>
+	<span class="caption"><h2 class="h5 "><%= link_to(product.name, product_path(product)) %></h2></span>
+</div>
+<% end %>

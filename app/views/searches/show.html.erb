@@ -1,0 +1,27 @@
+<div class="container">
+<div class="col-6">
+	<h1> What we got!</h1>
+<p><%= link_to 'Back', new_search_path %></p>
+
+<!-- search_products is the method created in controller -->
+
+<% if @search.search_products.empty? %>
+
+<p> Sorry, not available!</p>
+
+<% else %>
+<!-- if not empty then output the below columns -->
+<% @search.search_products.each do |a| %>
+
+<div class="div">
+	<h2><%= a.name %></h2>
+	<p>Price: $<%= a.price %></p>
+	<p>Category: <%= a.category %></p>
+	<p>For_sale: <%= a.for_sale %></p>
+</div>
+
+<% end %>
+<% end %>
+
+</div>
+</div>

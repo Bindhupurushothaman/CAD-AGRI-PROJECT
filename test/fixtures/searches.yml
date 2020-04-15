@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  food: MyString
+  category: MyString
+  min_price: 9.99
+  max_price: 9.99
+  for_sale: MyString
+
+two:
+  food: MyString
+  category: MyString
+  min_price: 9.99
+  max_price: 9.99
+  for_sale: MyString

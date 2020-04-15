@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+ div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+img {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+}
+.caption {
+    display: block;
+}
+
+.cuisine-container {
+	margin: 2px,
+	padding: 2px;
+	max-width: 100%
+}
+

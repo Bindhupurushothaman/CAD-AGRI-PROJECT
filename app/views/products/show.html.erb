@@ -1,0 +1,50 @@
+<div class="container">
+<div class="col-6">
+
+  <% if @product.for_sale? %>
+	<h2>Easter Discount of <%= number_to_currency((@product.price * 0.25), decimal: 0) %></h2>
+  <% end %>
+
+</div>
+  <p>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>Ingredients:</strong>
+  <%= @product.ingredients %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @product.quantity %>
+</p>
+
+<div sytle="width:500px; height:300px">
+<%= image_tag(@product.photo, style:'width:20%') %>
+</div>
+
+<p class="h2">
+<% if @product.for_sale? %>
+<%= @product.price > 0 ? number_to_currency(@product.price, precision: 0) : "Price" %>
+<% else %>
+<%= @product.price > 0 ? number_to_currency(@product.price, precision: 0) : "Sold" %>
+<% end %>
+</p>
+
+<p>
+  <strong>Ingredients:</strong>
+  <%= @product.category %>
+</p>
+
+<h5> Add this to your basket on your home page by clicking on back </h5>
+
+<%= link_to 'Back', root_path %> 
+
+
+</li> 
+</div>
+</div>
+
+<!-- back should go to home page / working on it-->

@@ -1,0 +1,15 @@
+<div class="w3-container w3-margin">
+	<div class="row-8">
+		<div class="col-12">
+		<h1 style= "text-align:center;"></h1>
+	</div>
+		<% @products.each do |product| %>
+		<div class="col-8">
+			<h5><%= product.name %> </h5>
+			<p><%= product.description %> </p>
+			<span><%= product.price %> | <%= product.for_sale ? "Available to buy" : "" %>
+			</span>
+		</div>
+		 <% end %> 
+		 </div>
+		</div>
