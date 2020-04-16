@@ -32,6 +32,8 @@
         <li class="active basket"><%= render 'layouts/basket' %></li>
             </ul>
 
+       <%= link_to "Report", profiles_path %>     
+
       <!-- conditions are passed below where if user is signed in then they should only be able to view the sign out button -->
       <% if user_signed_in? %>
 <%= button_to 'Sign out', destroy_user_session_path, method: :delete %>

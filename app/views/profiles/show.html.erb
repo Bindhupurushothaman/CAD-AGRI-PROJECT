@@ -17,7 +17,7 @@
 
 <p>
   <strong>User:</strong>
-  <%= @profile.user %>
+  <%= @profile.user.email.split('@')[0].capitalize %>
 </p>
 
 <%= link_to 'Edit', edit_profile_path(@profile) %> |

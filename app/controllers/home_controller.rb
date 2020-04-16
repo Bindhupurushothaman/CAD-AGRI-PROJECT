@@ -8,9 +8,12 @@ class HomeController < ApplicationController
   	@bill_item = current_billing.bill_items.new
   end
 
+
 def profile
 	@user = User.find(params[:id])
 end
+
+
 
 end
 
