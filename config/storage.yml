@@ -13,7 +13,7 @@ amazon:
   service: S3
   access_key_id: ASIASHIIMSDJ4BT6AC5A
   secret_access_key: REbZ3OG+gjofATWCRevJc10niTpQPGSsNrzub36g
-  region: US East (N. Virginia) us-east-1
+  region: us-east-1
   bucket: foodimages-project
 
 # Remember not to checkin your GCS keyfile to a repository
