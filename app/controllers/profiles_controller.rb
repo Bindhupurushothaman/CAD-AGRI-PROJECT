@@ -4,7 +4,9 @@ class ProfilesController < ApplicationController
   # GET /profiles
   # GET /profiles.json
   def index
+    @users = User.all
     @profiles = Profile.all
+    @online_users = User.where("last_seen_at > ?", 5.minutes.ago)
   end
 
   def signedinuserprofile
