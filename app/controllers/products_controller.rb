@@ -8,6 +8,11 @@ before_action :ensure_admin, :only => [:edit, :destroy]
   # GET /products
   # GET /products.json
   def index
+    if Rails.env.production?
+     @country = request.location.country
+     @city = request.location.city
+     @currency = request.currency
+    end 
     @product = Product.all
     @products = Product.search(params[:search])
   end

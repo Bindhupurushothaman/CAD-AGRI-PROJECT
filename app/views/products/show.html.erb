@@ -1,6 +1,7 @@
 <div class="container">
 <div class="col-6">
 
+
   <% if @product.for_sale? %>
 	<h2>Easter Discount of <%= number_to_currency((@product.price * 0.25), decimal: 0) %></h2>
   <% end %>
@@ -41,6 +42,12 @@
 <h5> Add this to your basket on your home page by clicking on back </h5>
 
 <%= link_to 'Back', root_path %> 
+
+<p>
+    User country: <%= @country %><br />
+    User city: <%= @city %><br />
+    User currency: <%= @currency %>
+  </p>
 
 
 </li> 
