@@ -11,8 +11,8 @@ local:
 # Use rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
 amazon:
   service: S3
-  access_key_id: ASIASHIIMSDJ4QHZHQPH
-  secret_access_key: 6g29fQ/NKH99my9w6WfEFLlvqMRLkpfCBy9L7vYh
+  access_key_id: ASIASHIIMSDJXLK7AITW
+  secret_access_key: joHegtS6vkCBX22vEyoCERbq90HpDRfBSCy/LvD5
   region: us-east-1
   bucket: foodimages-project
 
