@@ -3,7 +3,7 @@
 
 
   <% if @product.for_sale? %>
-	<h2>Easter Discount of <%= number_to_currency((@product.price * 0.25), decimal: 0) %></h2>
+	<h2>Easter Discount on take away <%= number_to_currency((@product.price * 0.25), decimal: 0) %></h2>
   <% end %>
 
 </div>

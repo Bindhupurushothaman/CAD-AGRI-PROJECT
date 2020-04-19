@@ -27,8 +27,9 @@
         <td><%= product.nonveg %></td>
         <td><%= product.category %></td>
         <td><%= link_to 'Show', product %></td>
-        <% if current_user && current_user.admin %>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        
+        <% if current_user && current_user.admin %>
         <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>
       </tr>
