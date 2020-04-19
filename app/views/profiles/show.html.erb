@@ -20,5 +20,11 @@
   <%= @profile.user.email.split('@')[0].capitalize %>
 </p>
 
+<p>
+    User country: <%= @country %><br />
+    User city: <%= @city %><br />
+    User currency: <%= @currency %>
+  </p>
+
 <%= link_to 'Edit', edit_profile_path(@profile) %> |
 <%= link_to 'Back', profiles_path %>

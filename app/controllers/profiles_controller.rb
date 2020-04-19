@@ -4,6 +4,11 @@ class ProfilesController < ApplicationController
   # GET /profiles
   # GET /profiles.json
   def index
+    if Rails.env.production?
+     @country = request.location.country_code
+     @city = request.location.city
+     @currency = @country.upcase == "IN" ? "INR" : "EUR" 
+    end 
     @users = User.all
     @profiles = Profile.all
     @online_users = User.where("last_seen_at > ?", 5.minutes.ago)
