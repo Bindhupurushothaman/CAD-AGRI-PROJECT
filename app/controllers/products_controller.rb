@@ -9,9 +9,9 @@ before_action :ensure_admin, :only => [:edit, :destroy]
   # GET /products.json
   def index
     if Rails.env.production?
-     @country = request.location.country
+     @country = request.location.country_code
      @city = request.location.city
-     @currency = request.currency
+     @currency = @country.upcase == "IN" ? "INR" : "EUR" 
     end 
     @product = Product.all
     @products = Product.search(params[:search])
