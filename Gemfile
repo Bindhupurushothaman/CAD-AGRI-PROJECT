@@ -28,7 +28,7 @@ gem 'turbolinks', '~> 5'
 #image amazon s3
 gem 'carrierwave', "0.10.0"
 gem 'fog', '~> 1.37.0'
-gem 'aws-sdk-s3', '~> 1'
+gem "aws-sdk-s3", require: false
 #resize pic
 gem 'mini_magick'
 gem 'image_processing'
