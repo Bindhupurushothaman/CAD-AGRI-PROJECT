@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_16_161732) do
+ActiveRecord::Schema.define(version: 2020_04_22_131450) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -60,6 +60,18 @@ ActiveRecord::Schema.define(version: 2020_04_16_161732) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "farmers", force: :cascade do |t|
+    t.string "serial"
+    t.string "state"
+    t.string "year2011"
+    t.string "year2012"
+    t.string "year2013"
+    t.string "year2014"
+    t.string "working"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "products", force: :cascade do |t|
     t.string "name", default: ""
     t.decimal "price", default: "0.0"
@@ -104,8 +116,8 @@ ActiveRecord::Schema.define(version: 2020_04_16_161732) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "first_name", unique: true
-    t.string "last_name"
+    t.string "first_name", default: "", null: false
+    t.string "last_name", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "email", default: "", null: false
     t.string "url"
