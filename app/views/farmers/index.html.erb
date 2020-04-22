@@ -1,13 +1,13 @@
 <table class=table>
   <thead>
     <tr>
-      <th>Serial</th>
+      <th>id</th>
       <th>State</th>
       <th>Year2011</th>
       <th>Year2012</th>
       <th>Year2013</th>
       <th>Year2014</th>
-      <th>Working</th>
+      <th>Farmer's_Working</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,14 +22,6 @@
         <td><%= farmer.year2013 %></td>
         <td><%= farmer.year2014 %></td>
         <td><%= farmer.working %></td>
-        <td><%= link_to 'Show', farmer %></td>
-        <td><%= link_to 'Edit', edit_farmer_path(farmer) %></td>
-        <td><%= link_to 'Destroy', farmer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Farmer', new_farmer_path %>
