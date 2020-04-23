@@ -1,0 +1,22 @@
+<p>
+  <strong>Name:</strong>
+  <%= @pizza.name %>
+</p>
+
+<p>
+  <strong>Total Cost:</strong>
+  <%= @pizza.cost %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @pizza.description %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @pizza.size %>
+</p>
+
+<%= link_to 'Edit', edit_pizza_path(@pizza) %> |
+<%= link_to 'Back', pizzas_path %>
