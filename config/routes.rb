@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :products
   resources :bill_items
   resource :baskets, only: [:show]
-  devise_for :users, controllers: {registrations: "registrations"} 
+  devise_for :users 
 resources :searches
 resources :profiles
   get 'cuisine', to: 'cuisine#index'

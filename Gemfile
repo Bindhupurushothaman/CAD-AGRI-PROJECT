@@ -19,7 +19,7 @@ gem 'webpacker'
 # gem 'mini_racer', platforms: :ruby
 # user authentication
 gem 'devise'
-gem "recaptcha", require: "recaptcha/rails"
+#gem "recaptcha", require: "recaptcha/rails"
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 #gem 'geocoder'
