@@ -69,6 +69,7 @@ GEM
     bindex (0.8.1)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
+    brakeman (4.8.1)
     builder (3.2.4)
     byebug (11.1.1)
     capybara (3.32.1)
@@ -274,6 +275,8 @@ GEM
     public_suffix (4.0.4)
     puma (3.12.4)
     rack (2.2.2)
+    rack-attack (6.2.2)
+      rack (>= 1.0, < 3)
     rack-proxy (0.6.5)
       rack
     rack-test (1.1.0)
@@ -383,6 +386,7 @@ PLATFORMS
 DEPENDENCIES
   aws-sdk-s3
   bootsnap (>= 1.1.0)
+  brakeman
   byebug
   capybara (>= 2.15)
   carrierwave (= 0.10.0)
@@ -398,6 +402,7 @@ DEPENDENCIES
   minitest-reporters
   pg
   puma (~> 3.11)
+  rack-attack
   rails (~> 5.2.4, >= 5.2.4.2)
   sass-rails (~> 5.0)
   selenium-webdriver
