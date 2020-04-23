@@ -311,8 +311,6 @@ GEM
       json (>= 1.8)
       nokogiri (~> 1.5)
       optimist (~> 3.0)
-    recaptcha (5.5.0)
-      json
     regexp_parser (1.7.0)
     responders (3.0.0)
       actionpack (>= 5.0)
@@ -401,7 +399,6 @@ DEPENDENCIES
   pg
   puma (~> 3.11)
   rails (~> 5.2.4, >= 5.2.4.2)
-  recaptcha
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
