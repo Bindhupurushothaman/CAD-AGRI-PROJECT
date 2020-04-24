@@ -25,7 +25,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 
 #image amazon s3
-gem 'carrierwave', "0.10.0"
+gem 'carrierwave', '1.0.0'
 gem 'fog', '~> 1.37.0'
 
 #resize pic
