@@ -15,16 +15,21 @@
     </li>
 
     <li class="nav-item">
+      <% if user_signed_in? %>
       <%= link_to "Recipes", cuisine_path, class: "nav-link" , class: "nav-link #{@home == 'cuisine' ? 'active' : ''}" %>
+      <% end %>
     </li>
+
 
     <%= form_tag products_path, :method => 'get' do %>
     <%= text_field_tag :search, params[:search] %>
     <%= submit_tag "Search" %>
     <% end %>
       
-    <li class="nav-item">  
+    <li class="nav-item"> 
+    <% if user_signed_in? %> 
       <%= link_to "Advanced Search", new_search_path, class: "nav-link" %>
+      <% end %>
     </li>
 
     <li class="nav-item">
@@ -33,7 +38,9 @@
       
     <ul class="nav navbar-nav navbar-right">
       <li class="active basket" >
+        <% if user_signed_in? %>
         <%= render 'layouts/basket' %>
+        <% end %>
       </li>
     </ul>
    
@@ -51,15 +58,21 @@
   <% end %>
 
   <li class="nav-item">
+    <% if user_signed_in? %>
    <%= link_to "Profiles", profiles_path, class: "nav-link"  %>
+   <% end %>
   </li> 
 
   <li class="nav-item">
+    <% if user_signed_in? %>
    <%= link_to "Farmers News", farmers_path, class: "nav-link"  %>
+   <% end %>
   </li> 
 
   <li class="nav-item">
+    <% if user_signed_in? %>
    <%= link_to "Pizza", pizzas_path, class: "nav-link"  %>
+   <% end %>
   </li> 
 
   </ul>
