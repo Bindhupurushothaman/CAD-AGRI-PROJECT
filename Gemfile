@@ -39,7 +39,7 @@ gem 'fog', '~> 1.37.0'
 gem "aws-sdk-s3", require: false
 #resize pic
 gem 'mini_magick'
-gem 'image_processing'
+gem 'image_processing', '>= 1.12.2'
 #gem 'agridatatest_gem'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
