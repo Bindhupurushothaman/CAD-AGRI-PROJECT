@@ -21,7 +21,7 @@ gem 'webpacker'
 #for security
 gem 'devise'
 
-gem 'rack-attack'
+gem 'rack-attack', '>= 6.7.0'
 
 #gem "recaptcha", require: "recaptcha/rails"
 
