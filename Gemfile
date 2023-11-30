@@ -34,7 +34,7 @@ gem 'turbolinks', '~> 5'
 
 #image amazon s3
 #gem 'carrierwave', "0.10.0"
-gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+gem 'carrierwave', '~> 2.2', '>= 2.2.5'
 gem 'fog', '~> 1.37.0'
 gem "aws-sdk-s3", require: false
 #resize pic
